@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMatrix AIML Academy - Syllabus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 z-10 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">MindMatrix AIML Academy</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-blue-200">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-200">About</a></li>
+                <li><a href="courses.html" class="hover:text-blue-200">Courses</a></li>
+                <li><a href="syllabus.html" class="hover:text-blue-200">Syllabus</a></li>
+                <li><a href="corporate.html" class="hover:text-blue-200">Corporate Training</a></li>
+                <li><a href="contact.html" class="hover:text-blue-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Syllabus Section -->
+    <section class="py-16 bg-white pt-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Week-by-Week Syllabus</h2>
+            <div class="space-y-8">
+                <!-- Full-Stack Generative AI Course for Aspiring Coders -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Full-Stack Generative AI Course for Aspiring Coders</h3>
+                    <p class="text-gray-600 mb-4">A comprehensive 12-week syllabus covering advanced AI development, cloud computing, and real-world applications.</p>
+                    <button class="mt-4 text-blue-600 font-semibold hover:underline" onclick="toggleSyllabus('coders-syllabus')">View Syllabus</button>
+                    <div id="coders-syllabus" class="hidden mt-4 text-gray-600 space-y-2">
+                        <p><strong>Week 1:</strong> Introduction to AI, Machine Learning, NLP, Deep Learning, Reinforcement Learning, history, and industry applications</p>
+                        <p><strong>Week 2:</strong> Programming basics, data structures, libraries, environment setup, and version control</p>
+                        <p><strong>Week 3:</strong> NLP fundamentals, tokenization, stemming, lemmatization, POS tagging, named entity recognition, and sentiment analysis</p>
+                        <p><strong>Week 4:</strong> Transformers architecture, training processes, and prompt engineering basics</p>
+                        <p><strong>Week 5:</strong> Retrieval-Augmented Generation, vector databases, document integration, knowledge bot creation, and model finetuning</p>
+                        <p><strong>Week 6:</strong> Multimodal AI with vision, text, audio, video, image fusion, and use cases like image captioning and chatbots</p>
+                        <p><strong>Week 7:</strong> Multi-agent collaboration, agent orchestration, and control plane deployment</p>
+                        <p><strong>Week 8:</strong> SQL querying, REST API design, CI/CD pipelines, and containerization basics</p>
+                        <p><strong>Week 9:</strong> Machine learning services, app services, OAuth, API keys, authentication, and application deployment</p>
+                        <p><strong>Week 10:</strong> Building a full-stack GenAI app with RAG, prompting, UI, API, authentication, and cloud integration</p>
+                        <p><strong>Week 11:</strong> Model monitoring, data drift, LLMOps, and AI applications in finance, healthcare, insurance, HR, government, airlines, manufacturing</p>
+                        <p><strong>Week 12:</strong> Capstone project demo, mentor feedback, and career guidance for roles like Prompt Engineer, GenAI App Developer, AI Consultant</p>
+                    </div>
+                </div>
+                <!-- Generative AI Course for Non-Programmers -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Generative AI Course for Non-Programmers</h3>
+                    <p class="text-gray-600 mb-4">A 6-week syllabus focusing on AI fundamentals, prompt engineering, and no-code solutions.</p>
+                    <button class="mt-4 text-blue-600 font-semibold hover:underline" onclick="toggleSyllabus('noncoders-syllabus')">View Syllabus</button>
+                    <div id="noncoders-syllabus" class="hidden mt-4 text-gray-600 space-y-2">
+                        <p><strong>Week 1:</strong> AI evolution, machine learning, and neural networks</p>
+                        <p><strong>Week 2:</strong> Generative AI and prompt engineering</p>
+                        <p><strong>Week 3:</strong> Retrieval-Augmented Generation and multi-agent systems</p>
+                        <p><strong>Week 4:</strong> Cloud computing, APIs, and SQL basics</p>
+                        <p><strong>Week 5:</strong> Responsible AI and ethics</p>
+                        <p><strong>Week 6:</strong> Capstone project and career guidance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for toggling syllabus -->
+    <script>
+        function toggleSyllabus(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        <p>© 2025 MindMatrix AIML Academy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
