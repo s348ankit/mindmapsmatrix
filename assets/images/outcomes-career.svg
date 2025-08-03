@@ -1,0 +1,162 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="growth-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="50%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="bg-radial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f0f9ff"/>
+      <stop offset="100%" style="stop-color:#ecfdf5"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#bg-radial)"/>
+  
+  <!-- Career growth chart -->
+  <g transform="translate(50, 50)">
+    <!-- Chart background -->
+    <rect x="0" y="0" width="200" height="150" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" rx="5"/>
+    
+    <!-- Y-axis labels -->
+    <text x="-10" y="140" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="end">Entry</text>
+    <text x="-10" y="110" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="end">Mid</text>
+    <text x="-10" y="80" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="end">Senior</text>
+    <text x="-10" y="50" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="end">Lead</text>
+    <text x="-10" y="20" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="end">Expert</text>
+    
+    <!-- X-axis labels -->
+    <text x="25" y="165" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">0</text>
+    <text x="75" y="165" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">6mo</text>
+    <text x="125" y="165" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">1yr</text>
+    <text x="175" y="165" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">2yr</text>
+    
+    <!-- Growth curve -->
+    <path d="M 25 140 Q 50 120 75 100 Q 100 80 125 65 Q 150 50 175 35" 
+          stroke="url(#growth-gradient)" stroke-width="4" fill="none"/>
+    
+    <!-- Data points -->
+    <circle cx="25" cy="140" r="4" fill="#10b981"/>
+    <circle cx="75" cy="100" r="4" fill="#2563eb"/>
+    <circle cx="125" cy="65" r="4" fill="#059669"/>
+    <circle cx="175" cy="35" r="4" fill="#7c3aed"/>
+    
+    <!-- Skill bars -->
+    <g transform="translate(220, 20)">
+      <text x="0" y="10" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1f2937">Skills Growth</text>
+      
+      <!-- Python -->
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Python</text>
+      <rect x="0" y="35" width="80" height="6" rx="3" fill="#e5e7eb"/>
+      <rect x="0" y="35" width="65" height="6" rx="3" fill="#10b981"/>
+      
+      <!-- Machine Learning -->
+      <text x="0" y="55" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">ML</text>
+      <rect x="0" y="60" width="80" height="6" rx="3" fill="#e5e7eb"/>
+      <rect x="0" y="60" width="55" height="6" rx="3" fill="#2563eb"/>
+      
+      <!-- Deep Learning -->
+      <text x="0" y="80" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">DL</text>
+      <rect x="0" y="85" width="80" height="6" rx="3" fill="#e5e7eb"/>
+      <rect x="0" y="85" width="45" height="6" rx="3" fill="#059669"/>
+      
+      <!-- Cloud -->
+      <text x="0" y="105" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">Cloud</text>
+      <rect x="0" y="110" width="80" height="6" rx="3" fill="#e5e7eb"/>
+      <rect x="0" y="110" width="35" height="6" rx="3" fill="#7c3aed"/>
+    </g>
+  </g>
+  
+  <!-- Career path icons -->
+  <g transform="translate(50, 220)">
+    <!-- AI Engineer -->
+    <g>
+      <circle cx="20" cy="20" r="18" fill="#2563eb" opacity="0.1"/>
+      <circle cx="20" cy="15" r="8" fill="#2563eb"/>
+      <rect x="15" y="22" width="10" height="12" rx="5" fill="#2563eb"/>
+      <text x="20" y="50" font-family="Arial, sans-serif" font-size="8" fill="#1f2937" text-anchor="middle">AI Engineer</text>
+    </g>
+    
+    <!-- Data Scientist -->
+    <g transform="translate(80, 0)">
+      <circle cx="20" cy="20" r="18" fill="#10b981" opacity="0.1"/>
+      <rect x="15" y="12" width="3" height="8" fill="#10b981"/>
+      <rect x="20" y="10" width="3" height="10" fill="#10b981"/>
+      <rect x="25" y="14" width="3" height="6" fill="#10b981"/>
+      <circle cx="20" cy="15" r="3" fill="#059669"/>
+      <text x="20" y="50" font-family="Arial, sans-serif" font-size="8" fill="#1f2937" text-anchor="middle">Data Scientist</text>
+    </g>
+    
+    <!-- ML Engineer -->
+    <g transform="translate(160, 0)">
+      <circle cx="20" cy="20" r="18" fill="#059669" opacity="0.1"/>
+      <rect x="12" y="12" width="16" height="10" rx="2" fill="#059669"/>
+      <rect x="14" y="14" width="12" height="6" rx="1" fill="#ffffff" opacity="0.3"/>
+      <circle cx="32" cy="17" r="3" fill="#10b981"/>
+      <text x="20" y="50" font-family="Arial, sans-serif" font-size="8" fill="#1f2937" text-anchor="middle">ML Engineer</text>
+    </g>
+    
+    <!-- AI Consultant -->
+    <g transform="translate(240, 0)">
+      <circle cx="20" cy="20" r="18" fill="#7c3aed" opacity="0.1"/>
+      <circle cx="20" cy="15" r="6" fill="#7c3aed"/>
+      <rect x="17" y="20" width="6" height="8" rx="3" fill="#7c3aed"/>
+      <rect x="12" y="25" width="16" height="4" rx="2" fill="#a855f7"/>
+      <text x="20" y="50" font-family="Arial, sans-serif" font-size="8" fill="#1f2937" text-anchor="middle">AI Consultant</text>
+    </g>
+  </g>
+  
+  <!-- Success indicators -->
+  <g opacity="0.6">
+    <!-- Salary growth -->
+    <g transform="translate(320, 60)">
+      <rect x="0" y="20" width="4" height="20" fill="#10b981"/>
+      <rect x="8" y="15" width="4" height="25" fill="#2563eb"/>
+      <rect x="16" y="10" width="4" height="30" fill="#059669"/>
+      <rect x="24" y="5" width="4" height="35" fill="#7c3aed"/>
+      <text x="14" y="50" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Salary</text>
+    </g>
+    
+    <!-- Network growth -->
+    <g transform="translate(320, 130)">
+      <circle cx="10" cy="10" r="3" fill="#10b981"/>
+      <circle cx="20" cy="5" r="3" fill="#2563eb"/>
+      <circle cx="25" cy="15" r="3" fill="#059669"/>
+      <circle cx="30" cy="8" r="3" fill="#7c3aed"/>
+      <circle cx="15" cy="20" r="3" fill="#f59e0b"/>
+      
+      <line x1="10" y1="10" x2="20" y2="5" stroke="#10b981" stroke-width="1"/>
+      <line x1="20" y1="5" x2="25" y2="15" stroke="#2563eb" stroke-width="1"/>
+      <line x1="10" y1="10" x2="15" y2="20" stroke="#10b981" stroke-width="1"/>
+      <line x1="25" y1="15" x2="30" y2="8" stroke="#059669" stroke-width="1"/>
+      
+      <text x="20" y="35" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Network</text>
+    </g>
+    
+    <!-- Achievement badges -->
+    <g transform="translate(320, 200)">
+      <circle cx="8" cy="8" r="6" fill="#fbbf24"/>
+      <polygon points="8,4 10,8 8,12 6,8" fill="#ffffff"/>
+      
+      <circle cx="20" cy="8" r="6" fill="#ef4444"/>
+      <polygon points="20,4 22,8 20,12 18,8" fill="#ffffff"/>
+      
+      <circle cx="32" cy="8" r="6" fill="#10b981"/>
+      <polygon points="32,4 34,8 32,12 30,8" fill="#ffffff"/>
+      
+      <text x="20" y="25" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Achievements</text>
+    </g>
+  </g>
+  
+  <!-- Motivational elements -->
+  <g opacity="0.3">
+    <!-- Arrow pointing up -->
+    <path d="M 30 180 L 40 170 L 50 180" stroke="#10b981" stroke-width="3" fill="none"/>
+    <line x1="40" y1="170" x2="40" y2="190" stroke="#10b981" stroke-width="3"/>
+    
+    <!-- Target/goal -->
+    <circle cx="350" cy="40" r="15" fill="none" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="350" cy="40" r="10" fill="none" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="350" cy="40" r="5" fill="#2563eb"/>
+  </g>
+</svg>

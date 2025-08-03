@@ -1,0 +1,101 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="screen-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f2937"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Laptop base -->
+  <ellipse cx="200" cy="280" rx="180" ry="15" fill="#e5e7eb" opacity="0.3"/>
+  
+  <!-- Laptop screen -->
+  <rect x="50" y="40" width="300" height="200" rx="15" fill="#374151"/>
+  <rect x="60" y="50" width="280" height="170" rx="8" fill="url(#screen-gradient)"/>
+  
+  <!-- Code editor interface -->
+  <!-- Top bar -->
+  <rect x="60" y="50" width="280" height="25" rx="8" fill="#4b5563"/>
+  <circle cx="80" cy="62" r="4" fill="#ef4444"/>
+  <circle cx="95" cy="62" r="4" fill="#f59e0b"/>
+  <circle cx="110" cy="62" r="4" fill="#10b981"/>
+  
+  <!-- Sidebar -->
+  <rect x="60" y="75" width="60" height="145" fill="#1f2937"/>
+  
+  <!-- File tree -->
+  <rect x="65" y="85" width="8" height="2" fill="#10b981"/>
+  <text x="75" y="88" font-family="monospace" font-size="6" fill="#d1d5db">src/</text>
+  <rect x="70" y="95" width="6" height="2" fill="#2563eb"/>
+  <text x="78" y="98" font-family="monospace" font-size="6" fill="#d1d5db">ai.py</text>
+  <rect x="70" y="105" width="6" height="2" fill="#2563eb"/>
+  <text x="78" y="108" font-family="monospace" font-size="6" fill="#d1d5db">model.py</text>
+  <rect x="65" y="115" width="8" height="2" fill="#10b981"/>
+  <text x="75" y="118" font-family="monospace" font-size="6" fill="#d1d5db">data/</text>
+  
+  <!-- Code area -->
+  <rect x="120" y="75" width="220" height="145" fill="#111827"/>
+  
+  <!-- Code lines -->
+  <text x="125" y="90" font-family="monospace" font-size="8" fill="#f59e0b">import</text>
+  <text x="150" y="90" font-family="monospace" font-size="8" fill="#d1d5db">tensorflow as tf</text>
+  
+  <text x="125" y="105" font-family="monospace" font-size="8" fill="#f59e0b">import</text>
+  <text x="150" y="105" font-family="monospace" font-size="8" fill="#d1d5db">numpy as np</text>
+  
+  <text x="125" y="125" font-family="monospace" font-size="8" fill="#10b981">def</text>
+  <text x="145" y="125" font-family="monospace" font-size="8" fill="#60a5fa">create_model</text>
+  <text x="190" y="125" font-family="monospace" font-size="8" fill="#d1d5db">():</text>
+  
+  <text x="130" y="140" font-family="monospace" font-size="8" fill="#d1d5db">model = tf.keras.Sequential([</text>
+  
+  <text x="135" y="155" font-family="monospace" font-size="8" fill="#d1d5db">tf.keras.layers.Dense(</text>
+  <text x="220" y="155" font-family="monospace" font-size="8" fill="#fbbf24">128</text>
+  <text x="235" y="155" font-family="monospace" font-size="8" fill="#d1d5db">),</text>
+  
+  <text x="135" y="170" font-family="monospace" font-size="8" fill="#d1d5db">tf.keras.layers.Dropout(</text>
+  <text x="230" y="170" font-family="monospace" font-size="8" fill="#fbbf24">0.2</text>
+  <text x="245" y="170" font-family="monospace" font-size="8" fill="#d1d5db">),</text>
+  
+  <text x="135" y="185" font-family="monospace" font-size="8" fill="#d1d5db">tf.keras.layers.Dense(</text>
+  <text x="220" y="185" font-family="monospace" font-size="8" fill="#fbbf24">10</text>
+  <text x="230" y="185" font-family="monospace" font-size="8" fill="#d1d5db">)</text>
+  
+  <text x="130" y="200" font-family="monospace" font-size="8" fill="#d1d5db">])</text>
+  
+  <!-- Laptop keyboard -->
+  <rect x="80" y="250" width="240" height="20" rx="8" fill="#d1d5db"/>
+  
+  <!-- Keys representation -->
+  <g opacity="0.6">
+    <rect x="90" y="255" width="12" height="8" rx="2" fill="#9ca3af"/>
+    <rect x="105" y="255" width="12" height="8" rx="2" fill="#9ca3af"/>
+    <rect x="120" y="255" width="12" height="8" rx="2" fill="#9ca3af"/>
+    <rect x="135" y="255" width="12" height="8" rx="2" fill="#9ca3af"/>
+    <rect x="150" y="255" width="12" height="8" rx="2" fill="#9ca3af"/>
+    <rect x="200" y="255" width="12" height="8" rx="2" fill="#9ca3af"/>
+    <rect x="215" y="255" width="12" height="8" rx="2" fill="#9ca3af"/>
+    <rect x="230" y="255" width="12" height="8" rx="2" fill="#9ca3af"/>
+    <rect x="245" y="255" width="12" height="8" rx="2" fill="#9ca3af"/>
+    <rect x="260" y="255" width="12" height="8" rx="2" fill="#9ca3af"/>
+  </g>
+  
+  <!-- Floating AI elements -->
+  <g opacity="0.7">
+    <!-- Neural network visualization -->
+    <circle cx="350" cy="80" r="3" fill="#10b981"/>
+    <circle cx="365" cy="90" r="3" fill="#2563eb"/>
+    <circle cx="380" cy="85" r="3" fill="#059669"/>
+    
+    <line x1="350" y1="80" x2="365" y2="90" stroke="#10b981" stroke-width="1" opacity="0.6"/>
+    <line x1="365" y1="90" x2="380" y2="85" stroke="#2563eb" stroke-width="1" opacity="0.6"/>
+    
+    <!-- Data flow arrows -->
+    <path d="M 30 120 Q 40 110 50 120" stroke="#2563eb" stroke-width="2" fill="none" opacity="0.5"/>
+    <polygon points="48,118 52,120 48,122" fill="#2563eb" opacity="0.5"/>
+    
+    <!-- Binary code -->
+    <text x="20" y="180" font-family="monospace" font-size="10" fill="#10b981" opacity="0.4">01011010</text>
+    <text x="320" y="160" font-family="monospace" font-size="10" fill="#2563eb" opacity="0.4">11001100</text>
+  </g>
+</svg>

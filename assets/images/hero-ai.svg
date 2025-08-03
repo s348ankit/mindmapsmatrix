@@ -1,0 +1,97 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff"/>
+      <stop offset="100%" style="stop-color:#ecfdf5"/>
+    </linearGradient>
+    <linearGradient id="ai-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="50%" style="stop-color:#059669"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="600" height="400" fill="url(#bg-gradient)"/>
+  
+  <!-- Central AI Brain -->
+  <g transform="translate(250, 150)">
+    <!-- Main brain structure -->
+    <ellipse cx="50" cy="50" rx="45" ry="40" fill="url(#ai-gradient)" opacity="0.8"/>
+    
+    <!-- Neural network nodes -->
+    <circle cx="30" cy="30" r="4" fill="#ffffff"/>
+    <circle cx="70" cy="30" r="4" fill="#ffffff"/>
+    <circle cx="50" cy="45" r="4" fill="#ffffff"/>
+    <circle cx="25" cy="60" r="4" fill="#ffffff"/>
+    <circle cx="75" cy="60" r="4" fill="#ffffff"/>
+    <circle cx="50" cy="75" r="4" fill="#ffffff"/>
+    
+    <!-- Neural connections -->
+    <line x1="30" y1="30" x2="50" y2="45" stroke="#10b981" stroke-width="2" opacity="0.8"/>
+    <line x1="70" y1="30" x2="50" y2="45" stroke="#10b981" stroke-width="2" opacity="0.8"/>
+    <line x1="50" y1="45" x2="25" y2="60" stroke="#10b981" stroke-width="2" opacity="0.8"/>
+    <line x1="50" y1="45" x2="75" y2="60" stroke="#10b981" stroke-width="2" opacity="0.8"/>
+    <line x1="25" y1="60" x2="50" y2="75" stroke="#10b981" stroke-width="2" opacity="0.8"/>
+    <line x1="75" y1="60" x2="50" y2="75" stroke="#10b981" stroke-width="2" opacity="0.8"/>
+  </g>
+  
+  <!-- Surrounding data nodes -->
+  <g opacity="0.6">
+    <!-- Left side nodes -->
+    <circle cx="120" cy="100" r="3" fill="#2563eb"/>
+    <circle cx="100" cy="150" r="3" fill="#059669"/>
+    <circle cx="130" cy="200" r="3" fill="#10b981"/>
+    <circle cx="80" cy="250" r="3" fill="#2563eb"/>
+    
+    <!-- Right side nodes -->
+    <circle cx="480" cy="120" r="3" fill="#059669"/>
+    <circle cx="520" cy="180" r="3" fill="#2563eb"/>
+    <circle cx="490" cy="240" r="3" fill="#10b981"/>
+    <circle cx="460" cy="290" r="3" fill="#059669"/>
+    
+    <!-- Top nodes -->
+    <circle cx="200" cy="80" r="3" fill="#10b981"/>
+    <circle cx="300" cy="60" r="3" fill="#2563eb"/>
+    <circle cx="400" cy="90" r="3" fill="#059669"/>
+    
+    <!-- Bottom nodes -->
+    <circle cx="180" cy="320" r="3" fill="#059669"/>
+    <circle cx="280" cy="340" r="3" fill="#10b981"/>
+    <circle cx="380" cy="310" r="3" fill="#2563eb"/>
+  </g>
+  
+  <!-- Connection lines to central brain -->
+  <g opacity="0.3">
+    <line x1="120" y1="100" x2="270" y2="180" stroke="#2563eb" stroke-width="1"/>
+    <line x1="100" y1="150" x2="270" y2="190" stroke="#059669" stroke-width="1"/>
+    <line x1="480" y1="120" x2="330" y2="180" stroke="#059669" stroke-width="1"/>
+    <line x1="520" y1="180" x2="330" y2="200" stroke="#2563eb" stroke-width="1"/>
+    <line x1="200" y1="80" x2="280" y2="170" stroke="#10b981" stroke-width="1"/>
+    <line x1="400" y1="90" x2="320" y2="170" stroke="#059669" stroke-width="1"/>
+  </g>
+  
+  <!-- Floating data elements -->
+  <g opacity="0.4">
+    <!-- Code snippets -->
+    <rect x="50" y="50" width="40" height="6" rx="3" fill="#2563eb"/>
+    <rect x="55" y="60" width="30" height="4" rx="2" fill="#2563eb"/>
+    <rect x="50" y="68" width="35" height="4" rx="2" fill="#2563eb"/>
+    
+    <!-- Data charts -->
+    <rect x="450" y="50" width="4" height="20" fill="#059669"/>
+    <rect x="458" y="45" width="4" height="25" fill="#10b981"/>
+    <rect x="466" y="40" width="4" height="30" fill="#2563eb"/>
+    <rect x="474" y="35" width="4" height="35" fill="#059669"/>
+    
+    <!-- Binary patterns -->
+    <text x="80" y="350" font-family="monospace" font-size="8" fill="#10b981">101010</text>
+    <text x="480" y="340" font-family="monospace" font-size="8" fill="#2563eb">110011</text>
+  </g>
+  
+  <!-- Glowing effects -->
+  <g opacity="0.2">
+    <circle cx="300" cy="200" r="80" fill="none" stroke="#10b981" stroke-width="1"/>
+    <circle cx="300" cy="200" r="120" fill="none" stroke="#2563eb" stroke-width="0.5"/>
+  </g>
+</svg>
