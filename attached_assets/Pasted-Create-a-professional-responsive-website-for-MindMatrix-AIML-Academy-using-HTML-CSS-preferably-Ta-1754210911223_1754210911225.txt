@@ -1,0 +1,404 @@
+Create a professional, responsive website for MindMatrix AIML Academy using HTML, CSS (preferably Tailwind CSS), and vanilla JavaScript, incorporating the exact content provided below for each page, along with a new blog page and additional features like WhatsApp integration, social media links, and images. The website should reflect the academy’s focus on AI and Machine Learning education, with a modern, clean design and a color palette of blue, white, and green accents. Ensure the website is accessible (WCAG-compliant), SEO-optimized, and fast-loading.
+
+Exact Content for Pages
+Home (index.html):
+MindMatrix AIML Academy
+Home
+About
+Courses
+Syllabus
+Corporate Training
+Contact
+Empower Yourself with AI and Machine Learning Skills
+Join MindMatrix AIML Academy to gain practical AI and Machine Learning skills and solve real world problems.
+Explore Courses
+© 2025 MindMatrix AIML Academy. All rights reserved.
+Courses (courses.html):
+
+MindMatrix AIML Academy
+
+Home
+About
+Courses
+Syllabus
+Corporate Training
+Contact
+
+Our Courses
+
+Full-Stack Generative AI Course for Aspiring Coders
+
+Perfect for aspiring coders, students, and tech professionals eager to dive deep into the technical side of AI. Build and deploy cutting-edge Generative AI solutions with hands-on coding experience, no prior AI knowledge required.
+
+12-week intensive program with live coding sessions
+Master Python, LangChain, FastAPI, Streamlit etc for AI development
+Deploy models on cloud platforms and manage containers with Docker
+Work with advanced vector databases
+Build real-world projects across multiple domains
+Learn MLOps for production-ready AI pipelines
+Access to 1:1 mentorship and career guidance for tech roles
+Hands-on labs with industry-standard tools and APIs
+Join an exclusive alumni network for ongoing support
+
+Enroll Now
+
+Generative AI Course for Non-Programmers
+
+Designed for professionals, entrepreneurs, and beginners curious about AI without coding. Learn to leverage Generative AI for business and creative applications using no-code platforms and practical tools.
+
+6-week beginner-friendly program with interactive workshops
+Master prompt engineering
+Create no-code AI solutions
+Explore Retrieval-Augmented Generation (RAG) and multi-agent systems
+Apply AI in multiple domains
+Learn SQL basics and cloud platforms
+Understand ethical AI practices and bias mitigation
+Complete a capstone project tailored to your industry
+Career guidance to integrate AI into your professional role
+
+Enroll Now
+
+© 2025 MindMatrix AIML Academy. All rights reserved.
+
+About (about.html):
+
+MindMatrix AIML Academy
+
+Home
+About
+Courses
+Syllabus
+Learning Outcomes
+Corporate Training
+Contact
+
+MindMatrix AIML Academy offers both online and offline classes in the Bhopal area, providing flexible learning options for all.
+
+About MindMatrix AIML Academy
+
+Our Mission
+
+At MindMatrix AIML Academy, our mission is to democratize AI education by providing accessible, high-quality training in AI for everyone, empowering individuals and organizations to innovate and solve real-world problems.
+
+Our Vision
+
+We envision a world where AI literacy is universal, empowering people from all walks of life to use artificial intelligence to enhance everyday experiences and make lives better—whether in finance, healthcare, education, or beyond
+
+Our Team
+
+Our team consists of experienced AI practitioners, educators, and industry experts dedicated to guiding you through your AI journey. With expertise in machine learning, cloud computing, and ethical AI, we ensure a transformative learning experience.
+
+Why Choose Us
+
+With extensive industrial experience, we specialize in solving real-world AI use cases, mentoring students to master AI, and partnering with corporates to implement impactful AI solutions. Our hands-on approach ensures you gain practical skills for real-world success. We offer both online and offline classes in the Bhopal area, providing flexible learning options to suit your needs.
+
+Student Testimonial
+
+Join Us Today
+
+© 2025 MindMatrix AIML Academy. All rights reserved.
+
+Learning Outcomes (outcomes.html):
+
+MindMatrix AIML Academy
+
+Home
+About
+Courses
+Syllabus
+Learning Outcomes
+Corporate Training
+Contact
+
+Learning Outcomes
+
+Full-Stack Generative AI Course for Coders
+
+Develop full-stack AI applications using frameworks like LangChain and FastAPI.
+Deploy AI models on cloud platforms like Azure ML.
+Work with advanced databases (ChromaDB, FAISS) for AI applications.
+Build real-world solutions for finance, healthcare, and insurance.
+Gain career guidance and access to an exclusive alumni community.
+
+Generative AI Course for Non-Coders
+
+Understand core AI, ML, and Generative AI concepts.
+Master prompt engineering for models like ChatGPT and Claude.
+Design no-code Retrieval-Augmented Generation (RAG) systems.
+Utilize cloud platforms and basic SQL for data analysis.
+Lead ethical AI projects with a focus on safety and bias mitigation.
+
+© 2025 MindMatrix AIML Academy. All rights reserved.
+
+Corporate Training (corporate.html):
+
+MindMatrix AIML Academy
+
+Home
+About
+Courses
+Syllabus
+Corporate Training
+Contact
+
+Corporate and College AI Training Solutions
+
+Empower your organization or institution with tailored AI training and transformation strategies. In today's world, AI is not just a need—it's a necessity for staying competitive.
+
+AI Training for Technical Teams
+
+Customized for software engineers and data professionals, this program focuses on building and deploying full-stack AI solutions.
+
+Request a Quote
+
+AI Training for Non-Technical Teams
+
+Designed for business professionals, this no-code program teaches AI fundamentals and practical applications.
+
+Request a Quote
+
+AI Transformation Strategy Workshops
+
+We organize workshops to help corporates and colleges design AI transformation strategies, ensuring AI becomes a core driver of innovation and growth.
+
+Request a Quote
+
+Contact Us for Corporate Solutions
+
+© 2025 MindMatrix AIML Academy. All rights reserved.
+
+Syllabus (syllabus.html):
+
+MindMatrix AIML Academy
+
+Home
+About
+Courses
+Syllabus
+Corporate Training
+Contact
+
+Week-by-Week Syllabus
+
+Full-Stack Generative AI Course for Aspiring Coders
+
+A comprehensive 12-week syllabus covering advanced AI development, cloud computing, and real-world applications.
+
+View Syllabus
+
+Week 1: Introduction to AI, Machine Learning, NLP, Deep Learning, Reinforcement Learning, history, and industry applications
+
+Week 2: Programming basics, data structures, libraries, environment setup, and version control
+
+Week 3: NLP fundamentals, tokenization, stemming, lemmatization, POS tagging, named entity recognition, and sentiment analysis
+
+Week 4: Transformers architecture, training processes, and prompt engineering basics
+
+Week 5: Retrieval-Augmented Generation, vector databases, document integration, knowledge bot creation, and model finetuning
+
+Week 6: Multimodal AI with vision, text, audio, video, image fusion, and use cases like image captioning and chatbots
+
+Week 7: Multi-agent collaboration, agent orchestration, and control plane deployment
+
+Week 8: SQL querying, REST API design, CI/CD pipelines, and containerization basics
+
+Week 9: Machine learning services, app services, OAuth, API keys, authentication, and application deployment
+
+Week 10: Building a full-stack GenAI app with RAG, prompting, UI, API, authentication, and cloud integration
+
+Week 11: Model monitoring, data drift, LLMOps, and AI applications in finance, healthcare, insurance, HR, government, airlines, manufacturing
+
+Week 12: Capstone project demo, mentor feedback, and career guidance for roles like Prompt Engineer, GenAI App Developer, AI Consultant
+
+Generative AI Course for Non-Programmers
+
+A 6-week syllabus focusing on AI fundamentals, prompt engineering, and no-code solutions.
+
+View Syllabus
+
+Week 1: AI evolution, machine learning, and neural networks
+
+Week 2: Generative AI and prompt engineering
+
+Week 3: Retrieval-Augmented Generation and multi-agent systems
+
+Week 4: Cloud computing, APIs, and SQL basics
+
+Week 5: Responsible AI and ethics
+
+Week 6: Capstone project and career guidance
+
+© 2025 MindMatrix AIML Academy. All rights reserved.
+
+Contact (contact.html):
+
+MindMatrix AIML Academy
+
+Home
+About
+Courses
+Syllabus
+Corporate Training
+Contact
+
+Contact Us
+
+Ready to start your AI journey? Reach out to us for more information or to enroll!
+
+Name
+
+Email
+
+Message
+
+Send Message
+
+Get in Touch
+
+Email: info@mindmatrixaimlacademy.com
+
+Phone: +917447474011
+
+Address: E-8, Danish Kunj Bridge, Bawadiya Kalan, Gulmohar Colony, Bhopal, Madhya Pradesh 462042
+
+© 2025 MindMatrix AIML Academy. All rights reserved.
+
+Blog (New Page):
+
+Create a new blog page to support daily blog posts about AI, Machine Learning, and related topics.
+
+Structure: Display a grid or list of blog previews (title, excerpt, date, featured image), with a search bar, category filters (e.g., AI, Machine Learning, Career Tips), and pagination.
+
+Individual Blog Post: Each post should have a dedicated page with a title, author, date, content, and a featured image. Include a comment section (optional: integrate a third-party system like Disqus).
+
+Sample Blog Post:
+
+Title: The Future of Generative AI
+
+Author: MindMatrix Team
+
+Date: August 3, 2025
+
+Content: Generative AI is transforming industries, from creating realistic images to automating content generation. In this post, we explore the latest advancements in models like GPT and DALL-E, their applications in healthcare, finance, and education, and what the future holds for AI innovation.
+
+Featured Image: A royalty-free image of AI-generated art or a futuristic AI interface.
+
+Features
+
+Navigation:
+
+Include a responsive, sticky navigation bar with links to Home, About, Courses, Syllabus, Learning Outcomes, Corporate Training, Contact, and Blog.
+
+Use a hamburger menu for mobile devices.
+
+Highlight the active page in the navigation.
+
+WhatsApp Integration:
+
+Add a floating WhatsApp chat widget on all pages using a click-to-chat link: https://api.whatsapp.com/send?phone=+917447474011&text=Hello! I have a question about your courses.
+
+Include a WhatsApp icon and a welcome message ("Chat with us for instant support!").
+
+Ensure the widget is visible while scrolling and includes a GDPR-compliant consent popup.
+
+Social Media Links:
+
+Add social media icons (X, LinkedIn, Instagram, Facebook) in the footer and Contact page, linking to placeholder URLs:
+
+X: https://x.com/mindmatrixaiml
+
+LinkedIn: https://linkedin.com/company/mindmatrixaiml
+
+Instagram: https://instagram.com/mindmatrixaiml
+
+Facebook: https://facebook.com/mindmatrixaiml
+
+Use branded icons that match the website’s color scheme.
+
+Images:
+
+Incorporate high-quality, royalty-free images relevant to AI, machine learning, education, and technology:
+
+Home: Hero image of an AI interface or futuristic tech.
+
+Courses: Images of coding setups or AI applications for each course.
+
+About: Image of a classroom, AI team, or tech environment.
+
+Syllabus: Image of a study setup or learning materials.
+
+Learning Outcomes: Image of career growth or AI development.
+
+Corporate Training: Image of a corporate training session or workshop.
+
+Contact: Image of a support team or office environment.
+
+Blog: Featured images for each blog post (e.g., AI-generated art, tech visuals).
+
+Optimize images for fast loading (e.g., WebP format) and include descriptive alt text for accessibility.
+
+Design:
+
+Use Tailwind CSS for a modern, responsive design with a blue, white, and green color palette.
+
+Include subtle animations (e.g., fade-ins, hover effects) for a polished look.
+
+Ensure proper heading structure (H1, H2, etc.) and WCAG compliance (e.g., sufficient color contrast, keyboard navigation).
+
+Footer:
+
+Include the copyright notice ("© 2025 MindMatrix AIML Academy. All rights reserved.") on all pages.
+
+Add contact details (email: info@mindmatrixaimlacademy.com, phone: +917447474011, address: E-8, Danish Kunj Bridge, Bawadiya Kalan, Gulmohar Colony, Bhopal, Madhya Pradesh 462042) and social media links.
+
+Include quick links to all main pages.
+
+SEO and Accessibility:
+
+Add meta tags, a favicon, and Open Graph tags for social media sharing.
+
+Use descriptive alt text for images and ARIA attributes for accessibility.
+
+Include a sitemap.xml and robots.txt file for SEO.
+
+Blog Functionality:
+
+Enable dynamic blog post creation using a JSON file or a simple CMS (e.g., Contentful) to store blog data (title, author, date, content, image).
+
+Include a search bar, category filters, and pagination on the blog page.
+
+Allow comments on blog posts (optional: use Disqus or a custom comment system).
+
+Contact Form:
+
+Implement the contact form from contact.html with client-side validation for Name, Email, and Message fields.
+
+Connect the form to a placeholder backend (e.g., Formspree or a mock API) for submissions.
+
+Analytics:
+
+Add a placeholder for Google Analytics or a similar tracking script to monitor visitor behavior.
+
+Technical Requirements
+
+Use HTML, CSS (Tailwind CSS), and vanilla JavaScript for core functionality.
+
+Use a CDN-hosted library for icons (e.g., Font Awesome for social media and WhatsApp icons).
+
+Ensure cross-browser compatibility (Chrome, Firefox, Safari, Edge) and mobile responsiveness.
+
+Host images on a CDN or optimize them for web use.
+
+Structure the website with separate files: index.html, styles.css, script.js, and additional HTML files for each page (about.html, courses.html, etc.).
+
+Comment the code clearly to explain functionality, especially for WhatsApp integration, blog system, and form handling.
+
+Additional Notes
+
+Ensure the website aligns with the academy’s branding as an AI and ML education provider based in Bhopal, offering online and offline classes.
+
+For WhatsApp integration, follow best practices from sources like Elfsight or Gallabox.
+
+Use placeholder content for blog posts and images where necessary, ensuring relevance to AI education.
+
+Deliver the complete website code in a well-organized structure, with all pages, CSS, JavaScript, and assets.
