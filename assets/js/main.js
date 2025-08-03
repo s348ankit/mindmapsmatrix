@@ -3,12 +3,12 @@
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
-
     initializeContactForm();
     initializeWhatsAppWidget();
     initializeNewsletterForm();
     initializeScrollAnimations();
     initializeActiveNavigation();
+    initializeLazyLoading();
 });
 
 // Navigation functionality
@@ -17,24 +17,25 @@ function initializeNavigation() {
     const mobileMenu = document.querySelector('.mobile-menu');
     
     if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
+        mobileMenuButton.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent click from bubbling to document
+            mobileMenu.classList.toggle('open');
             
             // Toggle hamburger icon
             const icon = mobileMenuButton.querySelector('i');
-            if (mobileMenu.classList.contains('hidden')) {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            } else {
+            if (mobileMenu.classList.contains('open')) {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
             }
         });
         
         // Close mobile menu when clicking outside
         document.addEventListener('click', function(event) {
             if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
-                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('open');
                 const icon = mobileMenuButton.querySelector('i');
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
@@ -45,7 +46,7 @@ function initializeNavigation() {
         const mobileNavLinks = mobileMenu.querySelectorAll('a');
         mobileNavLinks.forEach(link => {
             link.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('open');
                 const icon = mobileMenuButton.querySelector('i');
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
@@ -93,7 +94,6 @@ function initializeWhatsAppWidget() {
         const whatsappButton = whatsappWidget.querySelector('.whatsapp-button');
         if (whatsappButton) {
             whatsappButton.addEventListener('click', function() {
-                // Analytics tracking can be added here
                 console.log('WhatsApp widget clicked');
             });
         }
@@ -110,7 +110,6 @@ function initializeContactForm() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form data
             const formData = new FormData(contactForm);
             const data = {
                 name: formData.get('name'),
@@ -120,36 +119,29 @@ function initializeContactForm() {
                 message: formData.get('message')
             };
             
-            // Validate required fields
             if (!data.name || !data.email || !data.message) {
                 showErrorMessage('Please fill in all required fields.');
                 return;
             }
             
-            // Validate email format
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(data.email)) {
                 showErrorMessage('Please enter a valid email address.');
                 return;
             }
             
-            // Show loading state
             const submitButton = contactForm.querySelector('button[type="submit"]');
             const originalText = submitButton.innerHTML;
             submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
             submitButton.disabled = true;
             
-            // Simulate form submission (replace with actual API call)
             setTimeout(() => {
-                // Reset button
                 submitButton.innerHTML = originalText;
                 submitButton.disabled = false;
                 
-                // Show success message
                 showSuccessMessage();
                 contactForm.reset();
                 
-                // Log form submission (replace with actual backend integration)
                 console.log('Contact form submitted:', data);
             }, 2000);
         });
@@ -160,7 +152,6 @@ function initializeContactForm() {
             successMessage.classList.remove('hidden');
             errorMessage?.classList.add('hidden');
             
-            // Auto-hide after 5 seconds
             setTimeout(() => {
                 successMessage.classList.add('hidden');
             }, 5000);
@@ -176,36 +167,6 @@ function initializeContactForm() {
     }
 }
 
-// FAQ functionality
-function initializeFAQ() {
-    const faqItems = document.querySelectorAll('.faq-item');
-    
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-        
-        if (question && answer) {
-            question.addEventListener('click', function() {
-                const isOpen = !answer.classList.contains('hidden');
-                
-                // Close all FAQ items
-                faqItems.forEach(faqItem => {
-                    const faqAnswer = faqItem.querySelector('.faq-answer');
-                    const faqQuestion = faqItem.querySelector('.faq-question');
-                    faqAnswer?.classList.add('hidden');
-                    faqQuestion?.classList.remove('active');
-                });
-                
-                // Open current item if it was closed
-                if (!isOpen) {
-                    answer.classList.remove('hidden');
-                    question.classList.add('active');
-                }
-            });
-        }
-    });
-}
-
 // Newsletter form functionality
 function initializeNewsletterForm() {
     const newsletterForm = document.getElementById('newsletter-form');
@@ -217,20 +178,17 @@ function initializeNewsletterForm() {
             
             const email = newsletterForm.querySelector('input[type="email"]').value;
             
-            // Validate email
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 alert('Please enter a valid email address.');
                 return;
             }
             
-            // Show loading state
             const submitButton = newsletterForm.querySelector('button[type="submit"]');
             const originalText = submitButton.textContent;
             submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Subscribing...';
             submitButton.disabled = true;
             
-            // Simulate subscription (replace with actual API call)
             setTimeout(() => {
                 submitButton.textContent = originalText;
                 submitButton.disabled = false;
@@ -241,7 +199,6 @@ function initializeNewsletterForm() {
                 
                 newsletterForm.reset();
                 
-                // Auto-hide success message
                 setTimeout(() => {
                     if (newsletterSuccess) {
                         newsletterSuccess.classList.add('hidden');
@@ -269,7 +226,6 @@ function initializeScrollAnimations() {
         });
     }, observerOptions);
     
-    // Observe elements with animation classes
     const animatedElements = document.querySelectorAll('.feature-card, .syllabus-card, .career-card, .blog-card');
     animatedElements.forEach(el => {
         observer.observe(el);
@@ -340,7 +296,6 @@ function throttle(func, limit) {
 function handleError(error, message = 'An error occurred') {
     console.error(error);
     
-    // Show user-friendly error message
     const errorDiv = document.createElement('div');
     errorDiv.className = 'error-message fixed top-4 right-4 z-50';
     errorDiv.innerHTML = `
@@ -352,7 +307,6 @@ function handleError(error, message = 'An error occurred') {
     
     document.body.appendChild(errorDiv);
     
-    // Auto-remove after 5 seconds
     setTimeout(() => {
         errorDiv.remove();
     }, 5000);
@@ -404,15 +358,11 @@ function initializeLazyLoading() {
         
         images.forEach(img => imageObserver.observe(img));
     } else {
-        // Fallback for browsers without IntersectionObserver
         images.forEach(img => {
             img.src = img.dataset.src;
         });
     }
 }
-
-// Initialize lazy loading
-document.addEventListener('DOMContentLoaded', initializeLazyLoading);
 
 // Export functions for use in other modules
 window.MindMatrixUtils = {
