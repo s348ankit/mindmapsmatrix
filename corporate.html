@@ -3,59 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMatrix AIML Academy - Corporate Training</title>
+    <title>Corporate Training - MindMatrix AIML Academy</title>
+    <meta name="description" content="Tailored AI training solutions for corporates and colleges. Transform your organization with our comprehensive AI education programs.">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#059669',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 font-sans">
-    <!-- Navbar -->
-    <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 z-10 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">MindMatrix AIML Academy</h1>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-blue-200">Home</a></li>
-                <li><a href="about.html" class="hover:text-blue-200">About</a></li>
-                <li><a href="courses.html" class="hover:text-blue-200">Courses</a></li>
-                <li><a href="syllabus.html" class="hover:text-blue-200">Syllabus</a></li>
-                <li><a href="corporate.html" class="hover:text-blue-200">Corporate Training</a></li>
-                <li><a href="contact.html" class="hover:text-blue-200">Contact</a></li>
-            </ul>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="assets/images/logo.svg" alt="MindMatrix AIML Academy" class="h-10 w-auto">
+                    <span class="ml-2 text-xl font-bold text-primary">MindMatrix AIML Academy</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="courses.html" class="nav-link">Courses</a>
+                        <a href="syllabus.html" class="nav-link">Syllabus</a>
+                        <a href="corporate.html" class="nav-link active">Corporate Training</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="courses.html" class="mobile-nav-link">Courses</a>
+                <a href="syllabus.html" class="mobile-nav-link">Syllabus</a>
+                <a href="corporate.html" class="mobile-nav-link active">Corporate Training</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
         </div>
     </nav>
 
-    <!-- Corporate Training Section -->
-    <section class="py-16 bg-white pt-24">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Corporate and College AI Training Solutions</h2>
-            <p class="text-gray-600 text-center mb-8">Empower your organization or institution with tailored AI training and transformation strategies. In today's world, AI is not just a need—it's a necessity for staying competitive.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- AI Training for Technical Teams -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4">AI Training for Technical Teams</h3>
-                    <p class="text-gray-600 mb-4">Customized for software engineers and data professionals, this program focuses on building and deploying full-stack AI solutions.</p>
-                    <a href="contact.html" class="text-blue-600 font-semibold hover:underline">Request a Quote</a>
-                </div>
-                <!-- AI Training for Non-Technical Teams -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4">AI Training for Non-Technical Teams</h3>
-                    <p class="text-gray-600 mb-4">Designed for business professionals, this no-code program teaches AI fundamentals and practical applications.</p>
-                    <a href="contact.html" class="text-blue-600 font-semibold hover:underline">Request a Quote</a>
-                </div>
-                <!-- AI Transformation Strategy Workshops -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4">AI Transformation Strategy Workshops</h3>
-                    <p class="text-gray-600 mb-4">We organize workshops to help corporates and colleges design AI transformation strategies, ensuring AI becomes a core driver of innovation and growth.</p>
-                    <a href="contact.html" class="text-blue-600 font-semibold hover:underline">Request a Quote</a>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Corporate and College AI Training Solutions</h1>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                Empower your organization or institution with tailored AI training and transformation strategies. 
+                In today's world, AI is not just a need—it's a necessity for staying competitive.
+            </p>
+        </div>
+    </section>
+
+    <!-- Training Programs Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Technical Training -->
+            <div class="mb-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-primary mb-6">AI Training for Technical Teams</h2>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Customized for software engineers and data professionals, this program focuses on building and deploying full-stack AI solutions.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-code text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Hands-on AI development with Python, LangChain, and FastAPI</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-cloud text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Cloud deployment and MLOps best practices</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-database text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Vector databases and advanced AI architectures</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-project-diagram text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Real-world project implementation</span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn-primary">
+                            Request a Quote
+                        </a>
+                    </div>
+                    <div>
+                        <img src="assets/images/corporate-training.svg" alt="Technical Training" class="w-full h-auto">
+                    </div>
                 </div>
             </div>
-            <div class="text-center mt-8">
-                <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700">Contact Us for Corporate Solutions</a>
+
+            <!-- Non-Technical Training -->
+            <div class="mb-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <img src="assets/images/corporate-training.svg" alt="Non-Technical Training" class="w-full h-auto">
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <h2 class="text-3xl font-bold text-primary mb-6">AI Training for Non-Technical Teams</h2>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Designed for business professionals, this no-code program teaches AI fundamentals and practical applications.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-lightbulb text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">AI strategy and business applications</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-edit text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Prompt engineering and no-code AI tools</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Ethical AI and responsible implementation</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-chart-line text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">ROI measurement and AI adoption strategies</span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn-primary">
+                            Request a Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transformation Workshops -->
+            <div class="bg-gray-50 rounded-lg p-8 mb-16">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-primary mb-4">AI Transformation Strategy Workshops</h2>
+                    <p class="text-lg text-gray-700">
+                        We organize workshops to help corporates and colleges design AI transformation strategies, 
+                        ensuring AI becomes a core driver of innovation and growth.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-map-marked-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Strategy Roadmap</h3>
+                        <p class="text-gray-600">Develop comprehensive AI adoption roadmaps tailored to your organization's goals.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-secondary text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cogs text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Implementation Planning</h3>
+                        <p class="text-gray-600">Create actionable plans for AI integration across different departments and processes.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-rocket text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Innovation Culture</h3>
+                        <p class="text-gray-600">Build AI-ready teams and foster innovation culture within your organization.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <a href="contact.html" class="btn-secondary">
+                        Request a Quote
+                    </a>
+                </div>
+            </div>
+
+            <!-- Why Choose Our Corporate Training -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-8 text-center">Why Choose Our Corporate Training?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="feature-card">
+                        <div class="text-primary text-3xl mb-4">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">Industry Experience</h3>
+                        <p class="text-gray-600">Real-world expertise from professionals who have implemented AI solutions across various industries.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="text-primary text-3xl mb-4">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">Customized Content</h3>
+                        <p class="text-gray-600">Training programs tailored to your organization's specific needs and industry requirements.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="text-primary text-3xl mb-4">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">Ongoing Support</h3>
+                        <p class="text-gray-600">Continuous mentorship and support throughout your AI transformation journey.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="text-primary text-3xl mb-4">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">Certification</h3>
+                        <p class="text-gray-600">Professional certifications and completion certificates for all participants.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact CTA -->
+            <div class="bg-primary text-white rounded-lg p-8 text-center">
+                <h2 class="text-3xl font-bold mb-4">Contact Us for Corporate Solutions</h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Ready to transform your organization with AI? Let's discuss your specific training needs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn-secondary">
+                        Get Custom Quote
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=+917447474011&text=Hello! I'm interested in corporate AI training solutions." target="_blank" class="btn-secondary">
+                        <i class="fab fa-whatsapp mr-2"></i>Chat on WhatsApp
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- WhatsApp Widget -->
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <a href="https://wa.me/917447474011?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20AI%2FML%20courses%20at%20MindMatrix%20Academy" 
+           target="_blank" 
+           class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+            <div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
+        </a>
+    </div>
+
     <!-- Footer -->
-    <footer class="bg-blue-600 text-white p-4 text-center">
-        <p>© 2025 MindMatrix AIML Academy. All rights reserved.</p>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/images/logo.svg" alt="MindMatrix AIML Academy" class="h-10 w-auto mb-4">
+                    <p class="text-gray-400">Empowering the next generation of AI professionals with cutting-edge education and practical skills.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-envelope mr-2"></i>info@mindmatrixaimlacademy.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+917447474011</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>E-8, Danish Kunj Bridge, Bawadiya Kalan, Gulmohar Colony, Bhopal, MP 462042</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/mindmatrixaiml" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://linkedin.com/company/mindmatrixaiml" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/mindmatrixaiml" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/mindmatrixaiml" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 MindMatrix AIML Academy. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -3,15 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMatrix AIML Academy - Empower Yourself with AI and Machine Learning Skills</title>
-    <meta name="description" content="Join MindMatrix AIML Academy to gain practical AI and Machine Learning skills and solve real world problems. Professional AI education in Bhopal.">
-    <meta name="keywords" content="AI, Machine Learning, Academy, Training, Bhopal, Generative AI, Python, Data Science">
-    
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="MindMatrix AIML Academy - AI & ML Education">
-    <meta property="og:description" content="Professional AI and Machine Learning education with hands-on training">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mindmatrixaimlacademy.com">
+    <title>AI & ML Blog - MindMatrix AIML Academy</title>
+    <meta name="description" content="Stay updated with the latest insights, trends, and tutorials in AI and Machine Learning from MindMatrix AIML Academy experts.">
     
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -45,12 +38,12 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                         <a href="about.html" class="nav-link">About</a>
                         <a href="courses.html" class="nav-link">Courses</a>
                         <a href="syllabus.html" class="nav-link">Syllabus</a>
                         <a href="corporate.html" class="nav-link">Corporate Training</a>
-                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="blog.html" class="nav-link active">Blog</a>
                         <a href="contact.html" class="nav-link">Contact</a>
                     </div>
                 </div>
@@ -67,42 +60,92 @@
         <!-- Mobile Navigation -->
         <div class="mobile-menu hidden md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-                <a href="index.html" class="mobile-nav-link active">Home</a>
+                <a href="index.html" class="mobile-nav-link">Home</a>
                 <a href="about.html" class="mobile-nav-link">About</a>
                 <a href="courses.html" class="mobile-nav-link">Courses</a>
                 <a href="syllabus.html" class="mobile-nav-link">Syllabus</a>
                 <a href="corporate.html" class="mobile-nav-link">Corporate Training</a>
-                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="blog.html" class="mobile-nav-link active">Blog</a>
                 <a href="contact.html" class="mobile-nav-link">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">AI & ML Blog</h1>
+            <p class="text-xl opacity-90">Stay updated with the latest insights, trends, and tutorials in AI and Machine Learning</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="animate-fade-in">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                        Empower Yourself with AI and Machine Learning Skills
-                    </h1>
-                    <p class="text-xl mb-8 opacity-90">
-                        Join MindMatrix AIML Academy to gain practical AI and Machine Learning skills and solve real world problems.
-                    </p>
-                    <a href="courses.html" class="btn-primary inline-block">
-                        Explore Courses
-                    </a>
+            <!-- Search and Filter Bar -->
+            <div class="mb-12">
+                <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                    <div class="relative flex-1 max-w-md">
+                        <input type="text" id="search-input" placeholder="Search articles..." 
+                               class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    
+                    <div class="flex gap-2 flex-wrap">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="ai">AI</button>
+                        <button class="filter-btn" data-category="machine-learning">Machine Learning</button>
+                        <button class="filter-btn" data-category="career-tips">Career Tips</button>
+                        <button class="filter-btn" data-category="tutorials">Tutorials</button>
+                    </div>
                 </div>
-                <div class="animate-slide-in">
-                    <img src="assets/images/hero-ai.svg" alt="AI and Machine Learning" class="w-full h-auto">
-                </div>
+            </div>
+
+            <!-- Featured Post -->
+            <div id="featured-post" class="mb-16">
+                <!-- Featured post will be loaded dynamically -->
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div id="blog-posts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog posts will be loaded dynamically -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="load-more" class="btn-primary hidden">
+                    Load More Articles
+                </button>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="hidden text-center py-12">
+                <i class="fas fa-search text-4xl text-gray-400 mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-600 mb-2">No articles found</h3>
+                <p class="text-gray-500">Try adjusting your search or filter criteria</p>
             </div>
         </div>
     </section>
 
-
-
-
+    <!-- Newsletter Signup -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-primary mb-4">Stay Updated</h2>
+            <p class="text-lg text-gray-600 mb-8">Subscribe to our newsletter for the latest AI insights and course updates</p>
+            
+            <form id="newsletter-form" class="max-w-md mx-auto flex gap-2">
+                <input type="email" placeholder="Enter your email" required
+                       class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                <button type="submit" class="btn-primary">
+                    Subscribe
+                </button>
+            </form>
+            
+            <div id="newsletter-success" class="hidden mt-4 text-green-600">
+                <i class="fas fa-check-circle mr-2"></i>Thank you for subscribing!
+            </div>
+        </div>
+    </section>
 
     <!-- WhatsApp Widget -->
     <div id="whatsapp-widget" class="whatsapp-widget">
@@ -162,5 +205,6 @@
 
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/blog.js"></script>
 </body>
 </html>

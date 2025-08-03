@@ -3,71 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMatrix AIML Academy - Courses</title>
+    <title>Our Courses - MindMatrix AIML Academy</title>
+    <meta name="description" content="Explore our comprehensive AI and Machine Learning courses. Full-Stack Generative AI for Coders and AI for Non-Programmers.">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#059669',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 font-sans">
-    <!-- Navbar -->
-    <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 z-10 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">MindMatrix AIML Academy</h1>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-blue-200">Home</a></li>
-                <li><a href="about.html" class="hover:text-blue-200">About</a></li>
-                <li><a href="courses.html" class="hover:text-blue-200">Courses</a></li>
-                <li><a href="syllabus.html" class="hover:text-blue-200">Syllabus</a></li>
-                <li><a href="corporate.html" class="hover:text-blue-200">Corporate Training</a></li>
-                <li><a href="contact.html" class="hover:text-blue-200">Contact</a></li>
-            </ul>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="assets/images/logo.svg" alt="MindMatrix AIML Academy" class="h-10 w-auto">
+                    <span class="ml-2 text-xl font-bold text-primary">MindMatrix AIML Academy</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="courses.html" class="nav-link active">Courses</a>
+                        <a href="syllabus.html" class="nav-link">Syllabus</a>
+                        <a href="corporate.html" class="nav-link">Corporate Training</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="courses.html" class="mobile-nav-link active">Courses</a>
+                <a href="syllabus.html" class="mobile-nav-link">Syllabus</a>
+                <a href="corporate.html" class="mobile-nav-link">Corporate Training</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Courses</h1>
+            <p class="text-xl opacity-90">Choose the perfect AI learning path for your goals and background</p>
+        </div>
+    </section>
+
     <!-- Courses Section -->
-    <section class="py-16 bg-white pt-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Courses</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Full-Stack Generative AI Course for Aspiring Coders -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4">Full-Stack Generative AI Course for Aspiring Coders</h3>
-                    <p class="text-gray-600 mb-4">Perfect for aspiring coders, students, and tech professionals eager to dive deep into the technical side of AI. Build and deploy cutting-edge Generative AI solutions with hands-on coding experience, no prior AI knowledge required.</p>
-                    <ul class="list-disc list-inside text-gray-600 mb-4">
-                        <li>12-week intensive program with live coding sessions</li>
-                        <li>Master Python, LangChain, FastAPI, Streamlit etc for AI development</li>
-                        <li>Deploy models on cloud platforms and manage containers with Docker</li>
-                        <li>Work with advanced vector databases </li>
-                        <li>Build real-world projects across multiple domains</li>
-                        <li>Learn MLOps for production-ready AI pipelines</li>
-                        <li>Access to 1:1 mentorship and career guidance for tech roles</li>
-                        <li>Hands-on labs with industry-standard tools and APIs</li>
-                        <li>Join an exclusive alumni network for ongoing support</li>
-                    </ul>
-                    <a href="contact.html" class="text-blue-600 font-semibold hover:underline">Enroll Now</a>
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Course 1: Full-Stack Generative AI -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12 border border-gray-200">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <div class="p-8 lg:p-12">
+                        <h2 class="text-3xl font-bold text-primary mb-4">Full-Stack Generative AI Course for Aspiring Coders</h2>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            Perfect for aspiring coders, students, and tech professionals eager to dive deep into the technical side of AI. Build and deploy cutting-edge Generative AI solutions with hands-on coding experience, no prior AI knowledge required.
+                        </p>
+                        
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">12-week intensive program with live coding sessions</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Master Python, LangChain, FastAPI, Streamlit etc for AI development</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Deploy models on cloud platforms and manage containers with Docker</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Work with advanced vector databases</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Build real-world projects across multiple domains</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Learn MLOps for production-ready AI pipelines</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Access to 1:1 mentorship and career guidance for tech roles</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Hands-on labs with industry-standard tools and APIs</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Join an exclusive alumni network for ongoing support</span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn-primary">
+                            Enroll Now
+                        </a>
+                    </div>
+                    <div class="bg-gray-50 p-8 lg:p-12 flex items-center justify-center">
+                        <img src="assets/images/courses-coding.svg" alt="Full-Stack AI Course" class="w-full h-auto max-w-md">
+                    </div>
                 </div>
-                <!-- Generative AI Course for Non-Programmers -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4">Generative AI Course for Non-Programmers</h3>
-                    <p class="text-gray-600 mb-4">Designed for professionals, entrepreneurs, and beginners curious about AI without coding. Learn to leverage Generative AI for business and creative applications using no-code platforms and practical tools.</p>
-                    <ul class="list-disc list-inside text-gray-600 mb-4">
-                        <li>6-week beginner-friendly program with interactive workshops</li>
-                        <li>Master prompt engineering</li>
-                        <li>Create no-code AI solutions </li>
-                        <li>Explore Retrieval-Augmented Generation (RAG) and multi-agent systems</li>
-                        <li>Apply AI in multiple domains</li>
-                        <li>Learn SQL basics and cloud platforms </li>
-                        <li>Understand ethical AI practices and bias mitigation</li>
-                        <li>Complete a capstone project tailored to your industry</li>
-                        <li>Career guidance to integrate AI into your professional role</li>
-                    </ul>
-                    <a href="contact.html" class="text-blue-600 font-semibold hover:underline">Enroll Now</a>
+            </div>
+
+            <!-- Course 2: Generative AI for Non-Programmers -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <div class="bg-gray-50 p-8 lg:p-12 flex items-center justify-center order-2 lg:order-1">
+                        <img src="assets/images/courses-coding.svg" alt="AI for Non-Programmers" class="w-full h-auto max-w-md">
+                    </div>
+                    <div class="p-8 lg:p-12 order-1 lg:order-2">
+                        <h2 class="text-3xl font-bold text-primary mb-4">Generative AI Course for Non-Programmers</h2>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            Designed for professionals, entrepreneurs, and beginners curious about AI without coding. Learn to leverage Generative AI for business and creative applications using no-code platforms and practical tools.
+                        </p>
+                        
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">6-week beginner-friendly program with interactive workshops</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Master prompt engineering</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Create no-code AI solutions</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Explore Retrieval-Augmented Generation (RAG) and multi-agent systems</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Apply AI in multiple domains</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Learn SQL basics and cloud platforms</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Understand ethical AI practices and bias mitigation</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Complete a capstone project tailored to your industry</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mr-3 mt-1"></i>
+                                <span class="text-gray-700">Career guidance to integrate AI into your professional role</span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn-primary">
+                            Enroll Now
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Career?</h2>
+            <p class="text-xl mb-8 opacity-90">Join our comprehensive AI courses and become an AI professional</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="syllabus.html" class="btn-secondary">
+                    View Detailed Syllabus
+                </a>
+                <a href="contact.html" class="btn-secondary">
+                    Get More Information
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Widget -->
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <a href="https://wa.me/917447474011?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20AI%2FML%20courses%20at%20MindMatrix%20Academy" 
+           target="_blank" 
+           class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+            <div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
+        </a>
+    </div>
+
     <!-- Footer -->
-    <footer class="bg-blue-600 text-white p-4 text-center">
-        <p>© 2025 MindMatrix AIML Academy. All rights reserved.</p>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/images/logo.svg" alt="MindMatrix AIML Academy" class="h-10 w-auto mb-4">
+                    <p class="text-gray-400">Empowering the next generation of AI professionals with cutting-edge education and practical skills.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-envelope mr-2"></i>info@mindmatrixaimlacademy.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+917447474011</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>E-8, Danish Kunj Bridge, Bawadiya Kalan, Gulmohar Colony, Bhopal, MP 462042</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/mindmatrixaiml" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://linkedin.com/company/mindmatrixaiml" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/mindmatrixaiml" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/mindmatrixaiml" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 MindMatrix AIML Academy. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

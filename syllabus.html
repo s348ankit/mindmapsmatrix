@@ -3,79 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMatrix AIML Academy - Syllabus</title>
+    <title>Course Syllabus - MindMatrix AIML Academy</title>
+    <meta name="description" content="Detailed week-by-week syllabus for our AI and Machine Learning courses. Full curriculum breakdown for both technical and non-technical programs.">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#059669',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 font-sans">
-    <!-- Navbar -->
-    <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 z-10 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">MindMatrix AIML Academy</h1>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-blue-200">Home</a></li>
-                <li><a href="about.html" class="hover:text-blue-200">About</a></li>
-                <li><a href="courses.html" class="hover:text-blue-200">Courses</a></li>
-                <li><a href="syllabus.html" class="hover:text-blue-200">Syllabus</a></li>
-                <li><a href="corporate.html" class="hover:text-blue-200">Corporate Training</a></li>
-                <li><a href="contact.html" class="hover:text-blue-200">Contact</a></li>
-            </ul>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="assets/images/logo.svg" alt="MindMatrix AIML Academy" class="h-10 w-auto">
+                    <span class="ml-2 text-xl font-bold text-primary">MindMatrix AIML Academy</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="courses.html" class="nav-link">Courses</a>
+                        <a href="syllabus.html" class="nav-link active">Syllabus</a>
+                        <a href="corporate.html" class="nav-link">Corporate Training</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="courses.html" class="mobile-nav-link">Courses</a>
+                <a href="syllabus.html" class="mobile-nav-link active">Syllabus</a>
+                <a href="corporate.html" class="mobile-nav-link">Corporate Training</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Week-by-Week Syllabus</h1>
+            <p class="text-xl opacity-90">Comprehensive curriculum designed to master AI and Machine Learning</p>
+        </div>
+    </section>
+
     <!-- Syllabus Section -->
-    <section class="py-16 bg-white pt-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Week-by-Week Syllabus</h2>
-            <div class="space-y-8">
-                <!-- Full-Stack Generative AI Course for Aspiring Coders -->
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Full-Stack Generative AI Course for Aspiring Coders</h3>
-                    <p class="text-gray-600 mb-4">A comprehensive 12-week syllabus covering advanced AI development, cloud computing, and real-world applications.</p>
-                    <button class="mt-4 text-blue-600 font-semibold hover:underline" onclick="toggleSyllabus('coders-syllabus')">View Syllabus</button>
-                    <div id="coders-syllabus" class="hidden mt-4 text-gray-600 space-y-2">
-                        <p><strong>Week 1:</strong> Introduction to AI, Machine Learning, NLP, Deep Learning, Reinforcement Learning, history, and industry applications</p>
-                        <p><strong>Week 2:</strong> Programming basics, data structures, libraries, environment setup, and version control</p>
-                        <p><strong>Week 3:</strong> NLP fundamentals, tokenization, stemming, lemmatization, POS tagging, named entity recognition, and sentiment analysis</p>
-                        <p><strong>Week 4:</strong> Transformers architecture, training processes, and prompt engineering basics</p>
-                        <p><strong>Week 5:</strong> Retrieval-Augmented Generation, vector databases, document integration, knowledge bot creation, and model finetuning</p>
-                        <p><strong>Week 6:</strong> Multimodal AI with vision, text, audio, video, image fusion, and use cases like image captioning and chatbots</p>
-                        <p><strong>Week 7:</strong> Multi-agent collaboration, agent orchestration, and control plane deployment</p>
-                        <p><strong>Week 8:</strong> SQL querying, REST API design, CI/CD pipelines, and containerization basics</p>
-                        <p><strong>Week 9:</strong> Machine learning services, app services, OAuth, API keys, authentication, and application deployment</p>
-                        <p><strong>Week 10:</strong> Building a full-stack GenAI app with RAG, prompting, UI, API, authentication, and cloud integration</p>
-                        <p><strong>Week 11:</strong> Model monitoring, data drift, LLMOps, and AI applications in finance, healthcare, insurance, HR, government, airlines, manufacturing</p>
-                        <p><strong>Week 12:</strong> Capstone project demo, mentor feedback, and career guidance for roles like Prompt Engineer, GenAI App Developer, AI Consultant</p>
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Full-Stack Course Syllabus -->
+            <div class="mb-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-primary mb-4">Full-Stack Generative AI Course for Aspiring Coders</h2>
+                    <p class="text-lg text-gray-700">A comprehensive 12-week syllabus covering advanced AI development, cloud computing, and real-world applications.</p>
+                    <div class="mt-6">
+                        <img src="assets/images/syllabus-study.svg" alt="Study Materials" class="w-32 h-32 mx-auto">
                     </div>
                 </div>
-                <!-- Generative AI Course for Non-Programmers -->
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Generative AI Course for Non-Programmers</h3>
-                    <p class="text-gray-600 mb-4">A 6-week syllabus focusing on AI fundamentals, prompt engineering, and no-code solutions.</p>
-                    <button class="mt-4 text-blue-600 font-semibold hover:underline" onclick="toggleSyllabus('noncoders-syllabus')">View Syllabus</button>
-                    <div id="noncoders-syllabus" class="hidden mt-4 text-gray-600 space-y-2">
-                        <p><strong>Week 1:</strong> AI evolution, machine learning, and neural networks</p>
-                        <p><strong>Week 2:</strong> Generative AI and prompt engineering</p>
-                        <p><strong>Week 3:</strong> Retrieval-Augmented Generation and multi-agent systems</p>
-                        <p><strong>Week 4:</strong> Cloud computing, APIs, and SQL basics</p>
-                        <p><strong>Week 5:</strong> Responsible AI and ethics</p>
-                        <p><strong>Week 6:</strong> Capstone project and career guidance</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Week 1 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                            <h3 class="text-lg font-bold ml-3">Week 1</h3>
+                        </div>
+                        <p class="text-gray-700">Introduction to AI, Machine Learning, NLP, Deep Learning, Reinforcement Learning, history, and industry applications</p>
                     </div>
+
+                    <!-- Week 2 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                            <h3 class="text-lg font-bold ml-3">Week 2</h3>
+                        </div>
+                        <p class="text-gray-700">Programming basics, data structures, libraries, environment setup, and version control</p>
+                    </div>
+
+                    <!-- Week 3 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                            <h3 class="text-lg font-bold ml-3">Week 3</h3>
+                        </div>
+                        <p class="text-gray-700">NLP fundamentals, tokenization, stemming, lemmatization, POS tagging, named entity recognition, and sentiment analysis</p>
+                    </div>
+
+                    <!-- Week 4 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
+                            <h3 class="text-lg font-bold ml-3">Week 4</h3>
+                        </div>
+                        <p class="text-gray-700">Transformers architecture, training processes, and prompt engineering basics</p>
+                    </div>
+
+                    <!-- Week 5 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">5</div>
+                            <h3 class="text-lg font-bold ml-3">Week 5</h3>
+                        </div>
+                        <p class="text-gray-700">Retrieval-Augmented Generation, vector databases, document integration, knowledge bot creation, and model finetuning</p>
+                    </div>
+
+                    <!-- Week 6 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">6</div>
+                            <h3 class="text-lg font-bold ml-3">Week 6</h3>
+                        </div>
+                        <p class="text-gray-700">Multimodal AI with vision, text, audio, video, image fusion, and use cases like image captioning and chatbots</p>
+                    </div>
+
+                    <!-- Week 7 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">7</div>
+                            <h3 class="text-lg font-bold ml-3">Week 7</h3>
+                        </div>
+                        <p class="text-gray-700">Multi-agent collaboration, agent orchestration, and control plane deployment</p>
+                    </div>
+
+                    <!-- Week 8 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">8</div>
+                            <h3 class="text-lg font-bold ml-3">Week 8</h3>
+                        </div>
+                        <p class="text-gray-700">SQL querying, REST API design, CI/CD pipelines, and containerization basics</p>
+                    </div>
+
+                    <!-- Week 9 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">9</div>
+                            <h3 class="text-lg font-bold ml-3">Week 9</h3>
+                        </div>
+                        <p class="text-gray-700">Machine learning services, app services, OAuth, API keys, authentication, and application deployment</p>
+                    </div>
+
+                    <!-- Week 10 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">10</div>
+                            <h3 class="text-lg font-bold ml-3">Week 10</h3>
+                        </div>
+                        <p class="text-gray-700">Building a full-stack GenAI app with RAG, prompting, UI, API, authentication, and cloud integration</p>
+                    </div>
+
+                    <!-- Week 11 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">11</div>
+                            <h3 class="text-lg font-bold ml-3">Week 11</h3>
+                        </div>
+                        <p class="text-gray-700">Model monitoring, data drift, LLMOps, and AI applications in finance, healthcare, insurance, HR, government, airlines, manufacturing</p>
+                    </div>
+
+                    <!-- Week 12 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">12</div>
+                            <h3 class="text-lg font-bold ml-3">Week 12</h3>
+                        </div>
+                        <p class="text-gray-700">Capstone project demo, mentor feedback, and career guidance for roles like Prompt Engineer, GenAI App Developer, AI Consultant</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <a href="contact.html" class="btn-primary">
+                        View Syllabus Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- Non-Programmers Course Syllabus -->
+            <div>
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-primary mb-4">Generative AI Course for Non-Programmers</h2>
+                    <p class="text-lg text-gray-700">A 6-week syllabus focusing on AI fundamentals, prompt engineering, and no-code solutions.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Week 1 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                            <h3 class="text-lg font-bold ml-3">Week 1</h3>
+                        </div>
+                        <p class="text-gray-700">AI evolution, machine learning, and neural networks</p>
+                    </div>
+
+                    <!-- Week 2 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                            <h3 class="text-lg font-bold ml-3">Week 2</h3>
+                        </div>
+                        <p class="text-gray-700">Generative AI and prompt engineering</p>
+                    </div>
+
+                    <!-- Week 3 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                            <h3 class="text-lg font-bold ml-3">Week 3</h3>
+                        </div>
+                        <p class="text-gray-700">Retrieval-Augmented Generation and multi-agent systems</p>
+                    </div>
+
+                    <!-- Week 4 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
+                            <h3 class="text-lg font-bold ml-3">Week 4</h3>
+                        </div>
+                        <p class="text-gray-700">Cloud computing, APIs, and SQL basics</p>
+                    </div>
+
+                    <!-- Week 5 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">5</div>
+                            <h3 class="text-lg font-bold ml-3">Week 5</h3>
+                        </div>
+                        <p class="text-gray-700">Responsible AI and ethics</p>
+                    </div>
+
+                    <!-- Week 6 -->
+                    <div class="syllabus-card">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">6</div>
+                            <h3 class="text-lg font-bold ml-3">Week 6</h3>
+                        </div>
+                        <p class="text-gray-700">Capstone project and career guidance</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <a href="contact.html" class="btn-secondary">
+                        View Syllabus Details
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- JavaScript for toggling syllabus -->
-    <script>
-        function toggleSyllabus(id) {
-            const element = document.getElementById(id);
-            element.classList.toggle('hidden');
-        }
-    </script>
+    <!-- WhatsApp Widget -->
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <a href="https://wa.me/917447474011?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20AI%2FML%20courses%20at%20MindMatrix%20Academy" 
+           target="_blank" 
+           class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+            <div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
+        </a>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-blue-600 text-white p-4 text-center">
-        <p>© 2025 MindMatrix AIML Academy. All rights reserved.</p>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/images/logo.svg" alt="MindMatrix AIML Academy" class="h-10 w-auto mb-4">
+                    <p class="text-gray-400">Empowering the next generation of AI professionals with cutting-edge education and practical skills.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-envelope mr-2"></i>info@mindmatrixaimlacademy.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+917447474011</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>E-8, Danish Kunj Bridge, Bawadiya Kalan, Gulmohar Colony, Bhopal, MP 462042</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/mindmatrixaiml" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://linkedin.com/company/mindmatrixaiml" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/mindmatrixaiml" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/mindmatrixaiml" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 MindMatrix AIML Academy. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

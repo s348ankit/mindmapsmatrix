@@ -3,69 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMatrix AIML Academy - About Us</title>
+    <title>About Us - MindMatrix AIML Academy</title>
+    <meta name="description" content="Learn about MindMatrix AIML Academy's mission, vision, and team. We provide AI education both online and offline in the Bhopal area.">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#059669',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 font-sans">
-    <!-- Navbar -->
-    <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 z-10 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">MindMatrix AIML Academy</h1>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-blue-200">Home</a></li>
-                <li><a href="about.html" class="hover:text-blue-200">About</a></li>
-                <li><a href="courses.html" class="hover:text-blue-200">Courses</a></li>
-                <li><a href="syllabus.html" class="hover:text-blue-200">Syllabus</a></li>
-                <li><a href="outcomes.html" class="hover:text-blue-200">Learning Outcomes</a></li>
-                <li><a href="corporate.html" class="hover:text-blue-200">Corporate Training</a></li>
-                <li><a href="contact.html" class="hover:text-blue-200">Contact</a></li>
-            </ul>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="assets/images/logo.svg" alt="MindMatrix AIML Academy" class="h-10 w-auto">
+                    <span class="ml-2 text-xl font-bold text-primary">MindMatrix AIML Academy</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link active">About</a>
+                        <a href="courses.html" class="nav-link">Courses</a>
+                        <a href="syllabus.html" class="nav-link">Syllabus</a>
+                        <a href="corporate.html" class="nav-link">Corporate Training</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link active">About</a>
+                <a href="courses.html" class="mobile-nav-link">Courses</a>
+                <a href="syllabus.html" class="mobile-nav-link">Syllabus</a>
+                <a href="corporate.html" class="mobile-nav-link">Corporate Training</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
         </div>
     </nav>
 
-    <!-- About Section -->
-    <section class="py-16 bg-white pt-24">
-        <div class="container mx-auto px-4">
-            <p class="text-gray-600 text-center text-lg mb-8">MindMatrix AIML Academy offers both online and offline classes in the Bhopal area, providing flexible learning options for all.</p>
-            <h2 class="text-3xl font-bold text-center mb-12">About MindMatrix AIML Academy</h2>
-            <div class="space-y-12">
-                <!-- Mission -->
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
-                    <p class="text-gray-600">At MindMatrix AIML Academy, our mission is to democratize AI education by providing accessible, high-quality training in AI for everyone, empowering individuals and organizations to innovate and solve real-world problems.</p>
-                </div>
-                <!-- Vision -->
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Our Vision</h3>
-                    <p class="text-gray-600">We envision a world where AI literacy is universal, empowering people from all walks of life to use artificial intelligence to enhance everyday experiences and make lives better—whether in finance, healthcare, education, or beyond </p>
-                </div>
-                <!-- Our Team -->
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Our Team</h3>
-                    <p class="text-gray-600">Our team consists of experienced AI practitioners, educators, and industry experts dedicated to guiding you through your AI journey. With expertise in machine learning, cloud computing, and ethical AI, we ensure a transformative learning experience.</p>
-                </div>
-                <!-- Why Choose Us -->
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Why Choose Us</h3>
-                    <p class="text-gray-600">With extensive industrial experience, we specialize in solving real-world AI use cases, mentoring students to master AI, and partnering with corporates to implement impactful AI solutions. Our hands-on approach ensures you gain practical skills for real-world success. We offer both online and offline classes in the Bhopal area, providing flexible learning options to suit your needs.</p>
-                </div>
-                <!-- Student Testimonial -->
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Student Testimonial</h3>
-                    <blockquote class="text-gray-600 italic border-l-4 border-blue-600 pl-4">
-                        "MindMatrix AIML Academy transformed my career! Their practical training and expert mentorship helped me build an AI-powered chatbot for my company, opening new opportunities in tech." – Priya S., AI Developer
-                    </blockquote>
-                </div>
-            </div>
-            <div class="text-center mt-8">
-                <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700">Join Us Today</a>
-            </div>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">About MindMatrix AIML Academy</h1>
+            <p class="text-xl opacity-90">MindMatrix AIML Academy offers both online and offline classes in the Bhopal area, providing flexible learning options for all.</p>
         </div>
     </section>
 
+    <!-- Main Content -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h2 class="text-3xl font-bold text-primary mb-6">Our Mission</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        At MindMatrix AIML Academy, our mission is to democratize AI education by providing accessible, high-quality training in AI for everyone, empowering individuals and organizations to innovate and solve real-world problems.
+                    </p>
+                </div>
+                <div>
+                    <img src="assets/images/about-team.svg" alt="Our Team" class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div class="order-2 lg:order-1">
+                    <img src="assets/images/about-team.svg" alt="Our Vision" class="w-full h-auto rounded-lg">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-3xl font-bold text-primary mb-6">Our Vision</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        We envision a world where AI literacy is universal, empowering people from all walks of life to use artificial intelligence to enhance everyday experiences and make lives better—whether in finance, healthcare, education, or beyond.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-primary mb-8 text-center">Our Team</h2>
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <p class="text-lg text-gray-700 leading-relaxed text-center">
+                        Our team consists of experienced AI practitioners, educators, and industry experts dedicated to guiding you through your AI journey. With expertise in machine learning, cloud computing, and ethical AI, we ensure a transformative learning experience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-primary mb-8 text-center">Why Choose Us</h2>
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        With extensive industrial experience, we specialize in solving real-world AI use cases, mentoring students to master AI, and partnering with corporates to implement impactful AI solutions. Our hands-on approach ensures you gain practical skills for real-world success. We offer both online and offline classes in the Bhopal area, providing flexible learning options to suit your needs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <div class="feature-card">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Flexible Learning</h3>
+                    <p class="text-gray-600">Choose between online and offline classes based on your schedule and preferences.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Industry Experience</h3>
+                    <p class="text-gray-600">Learn from professionals with extensive real-world AI implementation experience.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Corporate Partnerships</h3>
+                    <p class="text-gray-600">Strong industry connections to help you transition into AI roles successfully.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Join Us Today</h2>
+            <p class="text-xl mb-8 opacity-90">Start your AI journey with industry experts and practical learning</p>
+            <a href="courses.html" class="btn-secondary bg-white text-secondary hover:bg-gray-100">
+                Explore Courses
+            </a>
+        </div>
+    </section>
+
+    <!-- WhatsApp Widget -->
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <a href="https://wa.me/917447474011?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20AI%2FML%20courses%20at%20MindMatrix%20Academy" 
+           target="_blank" 
+           class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+            <div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
+        </a>
+    </div>
+
     <!-- Footer -->
-    <footer class="bg-blue-600 text-white p-4 text-center">
-        <p>© 2025 MindMatrix AIML Academy. All rights reserved.</p>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/images/logo.svg" alt="MindMatrix AIML Academy" class="h-10 w-auto mb-4">
+                    <p class="text-gray-400">Empowering the next generation of AI professionals with cutting-edge education and practical skills.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-envelope mr-2"></i>info@mindmatrixaimlacademy.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+917447474011</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>E-8, Danish Kunj Bridge, Bawadiya Kalan, Gulmohar Colony, Bhopal, MP 462042</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/mindmatrixaiml" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://linkedin.com/company/mindmatrixaiml" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/mindmatrixaiml" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/mindmatrixaiml" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 MindMatrix AIML Academy. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
