@@ -1,0 +1,353 @@
+/* Custom styles for MindMatrix AIML Academy */
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.animate-slide-in {
+    animation: slideIn 0.8s ease-out;
+}
+
+/* Navigation styles */
+.nav-link {
+    @apply text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200;
+}
+
+.nav-link.active {
+    @apply text-blue-600 bg-blue-50;
+}
+
+.mobile-nav-link {
+    @apply text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200;
+}
+
+.mobile-nav-link.active {
+    @apply text-blue-600 bg-blue-50;
+}
+
+/* Button styles */
+.btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center justify-center;
+}
+
+.btn-secondary {
+    @apply bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center justify-center;
+}
+
+/* Card styles */
+.feature-card {
+    @apply bg-white p-6 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 text-center;
+}
+
+.syllabus-card {
+    @apply bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-300;
+}
+
+.career-card {
+    @apply bg-white p-6 rounded-lg border border-gray-200 hover:border-green-300 hover:shadow-md transition-all duration-300 text-center;
+}
+
+.blog-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300;
+}
+
+/* Social media icons */
+.social-icon {
+    @apply w-10 h-10 bg-gray-700 hover:bg-blue-600 text-white rounded-full flex items-center justify-center transition-colors duration-200;
+}
+
+/* WhatsApp widget */
+.whatsapp-widget {
+    @apply fixed bottom-6 right-6 z-50;
+}
+
+.whatsapp-button {
+    @apply w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center text-2xl shadow-lg hover:shadow-xl transition-all duration-300;
+}
+
+.whatsapp-tooltip {
+    @apply absolute bottom-full right-0 mb-2 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg opacity-0 pointer-events-none transition-opacity duration-200 whitespace-nowrap;
+}
+
+.whatsapp-widget:hover .whatsapp-tooltip {
+    @apply opacity-100;
+}
+
+/* Form styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200;
+}
+
+/* Blog filter buttons */
+.filter-btn {
+    @apply px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors duration-200;
+}
+
+.filter-btn.active {
+    @apply bg-blue-600 text-white border-blue-600;
+}
+
+/* FAQ styles */
+.faq-item .faq-question:hover {
+    @apply border-blue-500;
+}
+
+.faq-item .faq-question.active i {
+    @apply transform rotate-180;
+}
+
+/* Loading states */
+.loading {
+    @apply opacity-50 pointer-events-none;
+}
+
+.spinner {
+    @apply inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin;
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+    @apply transform transition-transform duration-300 ease-in-out;
+}
+
+.mobile-menu.hidden {
+    @apply -translate-y-full;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+    .mobile-menu-button {
+        @apply block;
+    }
+    
+    .hero-text {
+        @apply text-3xl;
+    }
+    
+    .feature-grid {
+        @apply grid-cols-1;
+    }
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        @apply hidden;
+    }
+    
+    body {
+        @apply text-black bg-white;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        @apply border-2 border-black;
+    }
+    
+    .nav-link {
+        @apply border border-transparent;
+    }
+    
+    .nav-link:hover {
+        @apply border-black;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus styles for accessibility */
+*:focus {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
+
+/* Blog post content styling */
+.prose {
+    @apply text-gray-800 leading-relaxed;
+}
+
+.prose h2 {
+    @apply text-2xl font-bold text-gray-900 mt-8 mb-4;
+}
+
+.prose h3 {
+    @apply text-xl font-semibold text-gray-900 mt-6 mb-3;
+}
+
+.prose p {
+    @apply mb-4;
+}
+
+.prose ul {
+    @apply list-disc pl-6 mb-4;
+}
+
+.prose ol {
+    @apply list-decimal pl-6 mb-4;
+}
+
+.prose blockquote {
+    @apply border-l-4 border-blue-500 pl-4 italic text-gray-700 my-6;
+}
+
+.prose code {
+    @apply bg-gray-100 px-2 py-1 rounded text-sm font-mono;
+}
+
+.prose pre {
+    @apply bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto my-6;
+}
+
+.prose img {
+    @apply rounded-lg shadow-md my-6;
+}
+
+/* Utility classes */
+.text-gradient {
+    background: linear-gradient(135deg, #2563eb, #059669);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bg-pattern {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0);
+    background-size: 20px 20px;
+}
+
+/* Error states */
+.error-message {
+    @apply text-red-600 bg-red-50 border border-red-200 rounded-lg p-3 text-sm;
+}
+
+.success-message {
+    @apply text-green-600 bg-green-50 border border-green-200 rounded-lg p-3 text-sm;
+}
+
+/* Loading skeleton */
+.skeleton {
+    @apply bg-gray-200 animate-pulse rounded;
+}
+
+.skeleton-text {
+    @apply h-4 bg-gray-200 animate-pulse rounded;
+}
+
+.skeleton-avatar {
+    @apply w-12 h-12 bg-gray-200 animate-pulse rounded-full;
+}
+
+/* Hover effects */
+.hover-lift {
+    @apply transition-transform duration-300;
+}
+
+.hover-lift:hover {
+    @apply transform -translate-y-1;
+}
+
+/* Badge styles */
+.badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-primary {
+    @apply bg-blue-100 text-blue-800;
+}
+
+.badge-secondary {
+    @apply bg-green-100 text-green-800;
+}
+
+.badge-warning {
+    @apply bg-yellow-100 text-yellow-800;
+}
+
+/* Table styles */
+.table {
+    @apply min-w-full divide-y divide-gray-200;
+}
+
+.table th {
+    @apply px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.table td {
+    @apply px-6 py-4 whitespace-nowrap text-sm text-gray-900;
+}
+
+/* Modal styles */
+.modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+}
+
+.modal-content {
+    @apply bg-white rounded-lg p-6 max-w-md w-full mx-4;
+}
+
+/* Alert styles */
+.alert {
+    @apply p-4 rounded-lg mb-4;
+}
+
+.alert-info {
+    @apply bg-blue-50 border border-blue-200 text-blue-800;
+}
+
+.alert-success {
+    @apply bg-green-50 border border-green-200 text-green-800;
+}
+
+.alert-warning {
+    @apply bg-yellow-50 border border-yellow-200 text-yellow-800;
+}
+
+.alert-error {
+    @apply bg-red-50 border border-red-200 text-red-800;
+}
